@@ -539,6 +539,7 @@ h3 {
 
 .tag {
   display: inline-flex;
+  position: relative;
   margin-bottom: 12px;
   margin-right: 6px;
   padding: 4px 10px;
@@ -552,11 +553,14 @@ h3 {
 .tag.sold-out {
   color: #ffffff;
   background: #9f2f27;
+  animation: urgencyShake 2.7s ease-in-out infinite;
 }
 
 .tag.availability {
   color: #6f4300;
   background: rgba(185, 139, 63, 0.18);
+  box-shadow: 0 0 0 rgba(185, 139, 63, 0);
+  animation: urgencyPulse 2.4s ease-in-out infinite;
 }
 
 .price {
@@ -572,6 +576,8 @@ h3 {
 
 .property-cta {
   display: inline-flex;
+  position: relative;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -588,10 +594,33 @@ h3 {
   transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 
+.property-cta::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(110deg, transparent, rgba(255, 255, 255, 0.36), transparent);
+  transform: translateX(-120%);
+}
+
+.property-cta::after {
+  margin-left: 8px;
+  content: ">";
+  transition: transform 180ms ease;
+}
+
 .property-cta:hover {
   background: var(--teal-dark);
   box-shadow: 0 14px 28px rgba(10, 111, 114, 0.20);
-  transform: translateY(-1px);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.property-cta:hover::before {
+  transform: translateX(120%);
+  transition: transform 620ms ease;
+}
+
+.property-cta:hover::after {
+  transform: translateX(3px);
 }
 
 .property-cta.secondary {
@@ -859,6 +888,43 @@ ul {
 @keyframes lineDrift {
   to {
     transform: translateX(58px);
+  }
+}
+
+@keyframes urgencyShake {
+  0%,
+  76%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  80% {
+    transform: translateX(-1px) rotate(-1deg);
+  }
+
+  84% {
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  88% {
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  92% {
+    transform: translateX(1px) rotate(1deg);
+  }
+}
+
+@keyframes urgencyPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(185, 139, 63, 0);
+    transform: translateY(0);
+  }
+
+  50% {
+    box-shadow: 0 0 0 6px rgba(185, 139, 63, 0.14);
+    transform: translateY(-1px);
   }
 }
 
