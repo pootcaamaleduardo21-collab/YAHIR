@@ -9,7 +9,7 @@ Landing estatica lista para publicar sin dominio propio. Esta pensada para SEO l
 
 ## Publicar hoy sin dominio
 
-La mejor opcion para salir hoy es Vercel porque permite publicar esta carpeta como sitio estatico, genera una URL temporal gratuita y despues deja conectar un dominio sin reconstruir el proyecto.
+La mejor opción para salir hoy es Vercel porque permite publicar esta carpeta como sitio estático, genera una URL temporal gratuita y después deja conectar un dominio sin reconstruir el proyecto.
 
 1. Crear cuenta o entrar a Vercel.
 2. Subir este proyecto a GitHub, GitLab o Bitbucket.
@@ -21,7 +21,7 @@ La mejor opcion para salir hoy es Vercel porque permite publicar esta carpeta co
 
 Vercel entregara una URL similar a `https://yahir-pulido-real-amalfi.vercel.app`.
 
-## Conectar dominio despues
+## Conectar dominio después
 
 1. Comprar dominio, por ejemplo `yahirpulido.com` o `realamalfiplaya.com`.
 2. En Vercel, abrir el proyecto y entrar a `Settings > Domains`.
@@ -31,7 +31,7 @@ Vercel entregara una URL similar a `https://yahir-pulido-real-amalfi.vercel.app`
 
 ## Alternativas
 
-Netlify tambien sirve muy bien para publicar hoy con drag and drop de la carpeta. Es buena opcion si no se quiere usar Git de inmediato. Para SEO y crecimiento ordenado, Vercel + GitHub es la ruta recomendada.
+Netlify también sirve muy bien para publicar hoy con drag and drop de la carpeta. Es buena opción si no se quiere usar Git de inmediato. Para SEO y crecimiento ordenado, Vercel + GitHub es la ruta recomendada.
 
 ## Ajustes recomendados antes de lanzar
 
@@ -49,7 +49,7 @@ El panel esta en `/admin.html`.
 Uso recomendado:
 
 1. Abrir `https://tu-dominio.com/admin.html`.
-2. Editar textos o rutas de imagenes.
+2. Editar textos o rutas de imágenes.
 3. Guardar para previsualizar en el navegador.
 4. Exportar `content.js`.
 5. Reemplazar el archivo `content.js` del proyecto y publicar de nuevo en Vercel.
@@ -58,4 +58,4 @@ Nota SEO: los cambios guardados solo en el navegador sirven para previsualizar. 
 
 ## Fuente de informacion
 
-Informacion comercial tomada del sitio oficial de Real Amalfi consultado el 6 de julio de 2026: https://www.realamalfi.mx/
+Información comercial tomada del sitio oficial de Real Amalfi consultado el 6 de julio de 2026: https://www.realamalfi.mx/
