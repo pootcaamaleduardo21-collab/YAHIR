@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Panel admin | Yahir Pulido Real Amalfi</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <section class="admin-hero">
+        <div>
+          <p class="eyebrow">Panel de contenido</p>
+          <h1>Editar textos e imagenes del sitio</h1>
+          <p>Los cambios se guardan en este navegador para previsualizar. Para publicarlos en Vercel, exporta el archivo y reemplaza `content.js` en el proyecto.</p>
+        </div>
+        <div class="admin-actions">
+          <a class="button secondary" href="index.html">Ver sitio</a>
+          <button class="button primary" type="button" id="saveContent">Guardar vista previa</button>
+        </div>
+      </section>
+
+      <form class="admin-form" id="contentForm">
+        <fieldset>
+          <legend>Hero SEO</legend>
+          <label>
+            H1 principal
+            <textarea name="heroTitle" rows="2"></textarea>
+          </label>
+          <label>
+            Texto principal
+            <textarea name="heroText" rows="4"></textarea>
+          </label>
+          <label>
+            Foto de Yahir
+            <input name="advisorImage" type="text" placeholder="assets/yahir-pulido.png">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Secciones SEO</legend>
+          <label>
+            Banda de confianza
+            <textarea name="trustText" rows="3"></textarea>
+          </label>
+          <label>
+            Titulo de beneficios
+            <textarea name="benefitsTitle" rows="2"></textarea>
+          </label>
+          <label>
+            Intro de beneficios
+            <textarea name="benefitsIntro" rows="3"></textarea>
+          </label>
+          <label>
+            Titulo Real Amalfi
+            <textarea name="showcaseTitle" rows="2"></textarea>
+          </label>
+          <label>
+            Texto Real Amalfi
+            <textarea name="showcaseText" rows="3"></textarea>
+          </label>
+          <label>
+            Imagen desarrollo
+            <input name="developmentImage" type="text" placeholder="assets/real-amalfi-desarrollo.jpg">
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Propiedades, CTA y ubicacion</legend>
+          <label>
+            Titulo propiedades
+            <textarea name="propertiesTitle" rows="2"></textarea>
+          </label>
+          <label>
+            Intro propiedades
+            <textarea name="propertiesIntro" rows="3"></textarea>
+          </label>
+          <label>
+            Titulo CTA
+            <textarea name="ctaTitle" rows="2"></textarea>
+          </label>
+          <label>
+            Texto CTA
+            <textarea name="ctaText" rows="3"></textarea>
+          </label>
+          <label>
+            Titulo ubicacion
+            <textarea name="locationTitle" rows="2"></textarea>
+          </label>
+          <label>
+            Direccion
+            <textarea name="locationAddress" rows="2"></textarea>
+          </label>
+        </fieldset>
+      </form>
+
+      <section class="admin-tools">
+        <button class="button primary" type="button" id="exportContent">Exportar content.js</button>
+        <button class="button secondary" type="button" id="resetContent">Restaurar contenido base</button>
+        <p id="adminStatus" role="status"></p>
+      </section>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
