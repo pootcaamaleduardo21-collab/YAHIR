@@ -1,6 +1,6 @@
 window.YAHIR_SITE_CONTENT = {
   heroTitle: "Departamentos y casas en venta en Real Amalfi Playa del Carmen",
-  heroText: "Con Yahir Pulido puedes conocer los modelos disponibles en Real Amalfi, comparar precios, resolver dudas de crédito y agendar una visita para elegir casa o departamento en Playa del Carmen.",
+  heroText: "Con Yahir Pulido puedes conocer los modelos disponibles en Real Amalfi, comparar precios, resolver dudas de crédito y agendar una visita para elegir tu nueva casa o departamento en Playa del Carmen.",
   trustText: "Real Amalfi Playa del Carmen combina casas, departamentos y amenidades pensadas para vivir con seguridad, comodidad y potencial de plusvalía en una de las zonas con mayor crecimiento de la Riviera Maya.",
   benefitsTitle: "Asesoría inmobiliaria local para comprar en Playa del Carmen",
   benefitsIntro: "Yahir te ayuda a comparar ubicación, metros de construcción, número de recámaras, estacionamiento, disponibilidad y formas de pago para que tomes una decisión con claridad.",

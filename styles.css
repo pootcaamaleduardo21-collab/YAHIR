@@ -570,6 +570,40 @@ h3 {
   color: var(--muted);
 }
 
+.property-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 42px;
+  margin-top: 18px;
+  padding: 0 14px;
+  color: var(--white);
+  background: var(--teal);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.property-cta:hover {
+  background: var(--teal-dark);
+  box-shadow: 0 14px 28px rgba(10, 111, 114, 0.20);
+  transform: translateY(-1px);
+}
+
+.property-cta.secondary {
+  color: var(--teal-dark);
+  background: rgba(10, 111, 114, 0.10);
+}
+
+.property-cta.secondary:hover {
+  color: var(--white);
+  background: var(--teal-dark);
+}
+
 ul {
   margin: 0;
   padding-left: 18px;
